@@ -39,4 +39,4 @@ iOS plant identification app using Core ML
 
 ### 📫 Let's Connect
 - 💼 [LinkedIn](https://linkedin.com/in/ummugulsunturkmen)
-- 🌐 [Portfolio](https://ummugulsunn.github.io/ummugulsun-portfolio)
+- 🌐 [Portfolio](https://ummugulsun.me)
