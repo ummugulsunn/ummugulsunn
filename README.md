@@ -40,3 +40,6 @@ iOS plant identification app using Core ML
 ### 📫 Let's Connect
 - 💼 [LinkedIn](https://linkedin.com/in/ummugulsunturkmen)
 - 🌐 [Portfolio](https://ummugulsun.me)
+
+### 🔤 Top Languages
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ummugulsunn&layout=compact&theme=radical)
