@@ -24,7 +24,7 @@ AI-powered OCR application with handwriting recognition and batch scanning capab
 - **Tech:** Flutter, ML Kit, Firebase
 - **Features:** 95% text recognition accuracy, PDF export
 
-#### �� [Ehliyet Rehberim](https://github.com/ummugulsunn/ehliyet-rehberim)  
+#### 🚗 [Ehliyet Rehberim](https://github.com/ummugulsunn/ehliyet-rehberim)  
 Turkish driving license preparation app with modern UI
 - **Tech:** Flutter, Dart
 - **Impact:** Helping thousands prepare for driving exams
@@ -44,4 +44,4 @@ iOS plant identification app using Core ML
 ### 🔤 Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ummugulsunn&layout=compact&theme=radical)
 
-<!-- force render: 2025-08-21 -->
+<!-- force render: 2025-08-23 -->
