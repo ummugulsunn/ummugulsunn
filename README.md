@@ -87,6 +87,6 @@ A comprehensive IoT solution for real-time environmental data collection and ana
 
 **Portfolio:** [https://ummugulsun.me](https://ummugulsun.me)
 
-**LinkedIn:** [Connect on LinkedIn](https://linkedin.com/in/ummugulsun-turkmen)
+**LinkedIn:** [Connect on LinkedIn](https://linkedin.com/in/ummugulsunturkmen)
 
 **Email:** Available upon request for professional inquiries
