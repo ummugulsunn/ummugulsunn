@@ -93,8 +93,10 @@ Automation and analysis tool that decodes user behavior through keystroke dynami
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=ummugulsunn&background=0D1117&ring=C9D1D9&fire=C9D1D9&currStreakLabel=C9D1D9&sideLabels=8B949E&dates=6E7681&hide_border=true" />
+  <img src="https://streak-stats.demolab.com/?user=ummugulsunn&background=0D1117&ring=C9D1D9&fire=C9D1D9&currStreakNum=C9D1D9&currStreakLabel=8B949E&sideNums=C9D1D9&sideLabels=8B949E&dates=6E7681&hide_border=true" />
 </div>
+
+---
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg" width="500" />
