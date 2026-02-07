@@ -86,8 +86,8 @@ Automation and analysis tool that decodes user behavior through keystroke dynami
 ### GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=C9D1D9&text_color=8B949E&icon_color=6E7681&bg_color=0D1117&hide_border=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ummugulsunn&layout=compact&title_color=C9D1D9&text_color=8B949E&bg_color=0D1117&hide_border=true" height="170" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=C9D1D9&text_color=8B949E&icon_color=6E7681&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="170" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ummugulsunn&layout=compact&title_color=C9D1D9&text_color=8B949E&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="170" />
 </div>
 
 <br>
