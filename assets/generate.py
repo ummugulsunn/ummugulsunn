@@ -46,7 +46,7 @@ def donut_frames(nf=60, cols=36, rows=18):
 # ------------------------------------------------------------------ EEG
 def eeg_rows(period=120, rows=6):
     vals = [1.4*math.sin(5*t)+0.8*math.sin(13*t+1)+0.4*math.sin(29*t) for t in (i/period*2*math.pi for i in range(period))]
-    for c0 in (30, 88):
+    for c0 in (30, 90):
         for k in range(-4, 5): vals[(c0+k) % period] += 2.4*math.exp(-(k*k)/2.5)
     lo, hi = min(vals), max(vals)
     ys = [int(round((rows-1)-(v-lo)/(hi-lo)*(rows-1))) for v in vals]
@@ -58,11 +58,59 @@ def eeg_rows(period=120, rows=6):
         for yy in range(y+step, yn, step): g[yy][i] = '|'
     return [''.join(r)*2 for r in g]
 
+
+# ------------------------------------------------------------------ ASCII eye (procedural, blinks in sync with the EEG spikes)
+def eye_frame(openness=1.0, look=0.0, cols=40, rows=15):
+    cx, cy = cols/2, rows/2
+    def lid(x):  # almond half-height in y-units for x in [-1,1]
+        return 0.62*max(0.0, 1-x*x)**0.55
+    grid = [[' ']*cols for _ in range(rows)]
+    inside = [[False]*cols for _ in range(rows)]
+    for r in range(rows):
+        y = (r-cy)/cy*0.72
+        for c in range(cols):
+            x = (c-cx)/cx
+            h = lid(x)
+            inside[r][c] = (-h*openness <= y <= h*openness) and abs(x) < 0.985
+    ix, iy = cx + look*5, cy
+    for r in range(rows):
+        for c in range(cols):
+            if not inside[r][c]: continue
+            up = r == 0 or not inside[r-1][c]; dn = r == rows-1 or not inside[r+1][c]
+            lf = c == 0 or not inside[r][c-1]; rt = c == cols-1 or not inside[r][c+1]
+            d = math.hypot((c-ix)/2.1, r-iy)
+            if up or dn:
+                if c < cx: ch = ('.' if up else "'") if (lf or (c < cx*0.35)) and openness > 0.3 else ('-' if abs(c-cx) < cx*0.5 else ('/' if up else '\\'))
+                else:      ch = ('.' if up else "'") if (rt or (c > cx*1.65)) and openness > 0.3 else ('-' if abs(c-cx) < cx*0.5 else ('\\' if up else '/'))
+                if openness < 0.15: ch = '-'
+            elif lf: ch = '('
+            elif rt: ch = ')'
+            elif d < 1.3: ch = '@'
+            elif d < 2.6: ch = '%' if not (r < iy and c < ix) else "'"
+            elif d < 4.0: ch = ';' if (r+c) % 2 else ':'
+            elif d < 4.6: ch = '.'
+            else: ch = ' '
+            grid[r][c] = ch
+    return [''.join(r) for r in grid]
+
+def eye_frames(nf=60, T=8.0, blink_times=(3.33, 7.33)):
+    frames, flags = [], []
+    for f in range(nf):
+        t = f*T/nf
+        o = 1.0; blinking = False
+        for bt in blink_times:
+            dt = t - bt
+            if -0.27 <= dt <= 0.27:
+                o = min(o, max(0.0, abs(dt)/0.27)**1.2); blinking = True
+        look = 0.6*math.sin(2*math.pi*t/T) if not blinking else 0.0
+        frames.append(eye_frame(o, look)); flags.append(blinking)
+    return frames, flags
+
 # ------------------------------------------------------------------ header.svg
 def build_header():
     H = 300; x0, y0 = 36, 44; EEGW = 560
     name = pyfiglet.Figlet(font="ansi_shadow", width=200).renderText("ummugulsun").rstrip("\n").split("\n")
-    nf, T = 60, 6.0
+    nf, T = 60, 8.0
     css = f""".d{{opacity:0;animation:show {T}s steps(1) infinite}}
 @keyframes show{{0%{{opacity:1}}{100/nf:.4f}%{{opacity:0}}100%{{opacity:0}}}}
 .cur{{animation:blink 1.1s steps(1) infinite}}@keyframes blink{{0%{{opacity:1}}50%{{opacity:0}}100%{{opacity:1}}}}
@@ -90,7 +138,7 @@ def build_header():
                  f'<animate attributeName="opacity" values="0;0.45;0" dur="{d:.1f}s" repeatCount="indefinite"/></rect>')
     p.append('</g>')
     # name: pixel mosaic, cells fly in once, holographic shimmer forever
-    bw, bh, ln = 7.6, 13.0, 2.0
+    bw, bh, ln = 6.8, 12.0, 2.0
     p.append('<g>')
     for r, l in enumerate(name):
         for c, ch in enumerate(l):
@@ -118,16 +166,23 @@ def build_header():
     p.append('<g class="in">' + tl(x0, 170, "Computer Engineering Student  ·  HCI  ·  Mobile Product", 16, cw, DIM) + '</g>')
     # EEG strip under the name (the bio-signal thread)
     rows = eeg_rows(); ecw, elh, esz = 7.0, 11.5, 11; per = 120*ecw
-    p.append(f'<g class="in">' + tl(x0, 198, "// eeg.stream  ·  blink artifacts: 2", 12, 7.2, MUTED))
+    p.append(f'<g class="in">' + tl(x0, 198, "// eeg.stream  ·  spike = blink", 12, 7.2, MUTED))
     p.append(f'<g clip-path="url(#eegclip)"><g><animateTransform attributeName="transform" type="translate" from="{x0} 0" to="{x0-per:.1f} 0" dur="8s" repeatCount="indefinite"/>'
              + ''.join(tl(0, 214+r*elh, l, esz, ecw, ACCENT if r < 2 else DIM) for r, l in enumerate(rows)) + '</g></g>')
-    p.append(f'<rect x="{x0-4}" y="200" width="{EEGW+8}" height="90" fill="url(#fadeh)"/></g>')
-    # donut (right)
-    dx, dy = 624, 36
-    p.append(f'<g class="in"><text x="{dx}" y="{dy-10}" font-size="12" fill="{MUTED}" xml:space="preserve">{esc("// torus.render(θ, φ)")}</text></g>')
+    p.append(f'<rect x="{x0-4}" y="200" width="{EEGW+8}" height="90" fill="url(#fadeh)"/>')
+    p.append(f'<line x1="{x0+40*ecw:.1f}" y1="204" x2="{x0+40*ecw:.1f}" y2="288" stroke="{ACCENT}" stroke-opacity="0.35" stroke-dasharray="2 3"/></g>')
+    # ASCII eye (right): blinks exactly when a spike crosses the EEG strip
+    dx, dy = 636, 40; ecw2, elh2 = 6.4, 12.5
+    p.append(f'<g class="in"><text x="{dx}" y="{dy-10}" font-size="12" fill="{MUTED}" xml:space="preserve">{esc("// neurotech.blink_detection()")}</text></g>')
     p.append('<g class="in">')
-    for fi, fr in enumerate(donut_frames(nf)):
-        p.append(f'<g class="d d{fi}">' + ''.join(tl(dx, dy+10+r*13, l, 11, 6.6, ACCENT) for r, l in enumerate(fr) if l.strip()) + '</g>')
+    frames, flags = eye_frames(nf, T)
+    for fi, (fr, bl) in enumerate(zip(frames, flags)):
+        body = ''.join(tl(dx, dy+12+r*elh2, l, 11, ecw2, FG if not bl else ACCENT) for r, l in enumerate(fr) if l.strip())
+        if bl:
+            body += tl(dx+40, dy+12+16*elh2+6, "⚡ blink → command", 13, 7.8, ACCENT, ' font-weight="bold"')
+        else:
+            body += tl(dx+40, dy+12+16*elh2+6, "  watching…", 13, 7.8, MUTED)
+        p.append(f'<g class="d d{fi}">' + body + '</g>')
     p.append('</g></svg>')
     open(os.path.join(OUT, "header.svg"), "w").write('\n'.join(p))
 
