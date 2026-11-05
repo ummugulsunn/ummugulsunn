@@ -1,13 +1,20 @@
 """Assets for the GitHub profile README. Pure CSS + SMIL, no JS, no external fonts.
   header.svg  modern banner: animated ASCII field (brightness -> character density) with the name set in clean type
   cat.svg     the cat GIF converted to ASCII frames (cat.json)
-Run:  python3 assets/generate.py assets"""
+Run:  python3 assets/generate.py assets [copper|mono|turquoise]"""
 import math, html, sys, os, json
 
 OUT = sys.argv[1]; os.makedirs(OUT, exist_ok=True)
 HERE = os.path.dirname(os.path.abspath(__file__))
 W = 900
-BG, FG, DIM, MUTED, ACCENT, ACCENT2 = "#0D1117", "#E6EDF3", "#8B949E", "#2C333D", "#D4956A", "#F0C9A6"
+THEMES = {  # accent, accent-light, field dim, field mid
+    "copper":    ("#D4956A", "#F0C9A6", "#3A4250", "#6E7681"),
+    "mono":      ("#C9D1D9", "#FFFFFF", "#2E3640", "#6E7681"),
+    "turquoise": ("#2DD4BF", "#99F6E4", "#263A44", "#4B7C86"),
+}
+THEME = sys.argv[2] if len(sys.argv) > 2 else "mono"
+ACCENT, ACCENT2, FDIM, FMID = THEMES[THEME]
+BG, FG, DIM, MUTED = "#0D1117", "#E6EDF3", "#8B949E", "#2C333D"
 MONO = "'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace"
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif"
 
@@ -61,8 +68,8 @@ def build_header():
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{MONO}">',
          f'<style>{css}</style>',
          '<defs>'
-         f'<linearGradient id="shade" x1="0" x2="1"><stop offset="0" stop-color="{BG}"/><stop offset="0.42" stop-color="{BG}" stop-opacity="0.92"/>'
-         f'<stop offset="0.7" stop-color="{BG}" stop-opacity="0"/></linearGradient>'
+         f'<linearGradient id="shade" x1="0" x2="1"><stop offset="0" stop-color="{BG}"/><stop offset="0.52" stop-color="{BG}" stop-opacity="0.96"/>'
+         f'<stop offset="0.8" stop-color="{BG}" stop-opacity="0"/></linearGradient>'
          f'<linearGradient id="acc" x1="0" x2="1"><stop offset="0" stop-color="{ACCENT}"/><stop offset="1" stop-color="{ACCENT2}"/></linearGradient>'
          f'<clipPath id="r"><rect width="{W}" height="{H}" rx="14"/></clipPath>'
          '</defs>',
@@ -74,8 +81,8 @@ def build_header():
             if not line.strip(): continue
             dim, mid, bri = split_layers(line)
             y = 12 + r*lh
-            if dim.strip(): parts.append(tl(0, y, dim, size, cw, "#3A4250"))
-            if mid.strip(): parts.append(tl(0, y, mid, size, cw, "#6E7681"))
+            if dim.strip(): parts.append(tl(0, y, dim, size, cw, FDIM))
+            if mid.strip(): parts.append(tl(0, y, mid, size, cw, FMID))
             if bri.strip(): parts.append(tl(0, y, bri, size, cw, ACCENT))
         p.append(f'<g class="k k{i}">' + ''.join(parts) + '</g>')
     p.append(f'<rect width="{W}" height="{H}" fill="url(#shade)"/>')
