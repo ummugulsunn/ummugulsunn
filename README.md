@@ -45,6 +45,15 @@ Build, trace and convert DFA, NFA, PDA and Turing machines step by step in the b
 **Hardware & signals** &nbsp; Arduino · EEG · image processing<br>
 **Product** &nbsp; UI/UX · behavioral analysis · microcopy
 
-<br>
+### GitHub
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=E6EDF3&text_color=8B949E&icon_color=C9D1D9&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ummugulsunn&layout=compact&title_color=E6EDF3&text_color=8B949E&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="165" />
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=ummugulsunn&background=0D1117&ring=C9D1D9&fire=C9D1D9&currStreakNum=E6EDF3&currStreakLabel=8B949E&sideNums=E6EDF3&sideLabels=8B949E&dates=6E7681&hide_border=true" />
+</div>
 
 <div align="center"><sub>Open to collaboration on HCI, mobile product and AI projects.</sub></div>
