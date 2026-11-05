@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="302" viewBox="0 0 1000 302" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace">
-<style>.c{opacity:0;animation:in .01s linear forwards}@keyframes in{to{opacity:1}}
-    .cur{animation:blink 1s steps(1) infinite}@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}</style>
-<rect width="1000" height="302" fill="#0D1117" rx="12"/>
-<rect width="1000" height="36" fill="#161B22" rx="12"/><rect y="24" width="1000" height="12" fill="#161B22"/>
+<style>.c{opacity:0;animation:in .01s linear forwards}@keyframes in{to{opacity:1}}.cur{animation:blink 1s steps(1) infinite}@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}</style>
+<rect width="1000" height="302" fill="#0D1117" rx="12"/><rect width="1000" height="36" fill="#161B22" rx="12"/><rect y="24" width="1000" height="12" fill="#161B22"/>
 <circle cx="22" cy="18" r="6" fill="#FF5F57" opacity="0.85"/>
 <circle cx="42" cy="18" r="6" fill="#FEBC2E" opacity="0.85"/>
 <circle cx="62" cy="18" r="6" fill="#28C840" opacity="0.85"/>
@@ -102,5 +100,4 @@
 <text x="94.2" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:7.22s" xml:space="preserve">s</text>
 <text x="24" y="262" font-size="13" fill="#8B949E" class="c" style="animation-delay:7.61s" xml:space="preserve">[████████████░░░░]  building the next thing…</text>
 <text x="24" y="284" font-size="13" fill="#484F58" class="c" style="animation-delay:8.16s">$ </text>
-<text x="39.6" y="284" font-size="13" fill="#D4956A" class="c cur" style="animation-delay:8.51s">▌</text>
-</svg>
+<text x="39.6" y="284" font-size="13" fill="#D4956A" class="c cur" style="animation-delay:8.51s">▌</text></svg>

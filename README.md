@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/header.svg" width="100%" alt="ummugulsun — animated ascii banner" />
+<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/header.svg" width="100%" alt="ummugulsun — animated banner" />
 
 <br>
 
@@ -12,11 +12,17 @@
 
 <br>
 
+<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/story.svg" width="100%" alt="story" />
+
+<br>
+
+<sub><samp>── 05 · ABOUT</samp></sub>
+
 <table border="0">
 <tr>
-<td width="64%" valign="top">
+<td width="62%" valign="top">
 
-### 01 — About
+## It's not about the code. It's about **the user.**
 
 Computer Engineering student with a **product-first mindset**. I don't just write code — I design experiences. From shipping a **5-star rated app on Google Play** to prototyping **touchless interfaces with EEG sensors**, every project starts and ends with the user.
 
@@ -24,15 +30,15 @@ Currently exploring the intersection of **Human-Computer Interaction**, **behavi
 
 <br>
 
-**Now**
-
-- 🔭 Building mobile products people open every day
-- 🧠 Researching brain-computer interfaces & bio-signals
-- 🌱 Learning behavioral analytics & product strategy
-- 📍 Open to collaboration on HCI, mobile and AI
+<samp>
+🔭 &nbsp;building mobile products people open every day<br>
+🧠 &nbsp;researching brain-computer interfaces & bio-signals<br>
+🌱 &nbsp;learning behavioral analytics & product strategy<br>
+📍 &nbsp;open to collaboration on HCI, mobile and AI
+</samp>
 
 </td>
-<td width="36%" align="center" valign="middle">
+<td width="38%" align="center" valign="middle">
 
 <img src="https://camo.githubusercontent.com/2083d412b4df3a6481f937dcc8550bd46ac2d6d17344714ab42b5b464870277f/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f61332f64362f39372f61336436393730393030386230376339393631366435633738646632386264372e676966" width="280" alt="cat coding" />
 
@@ -42,41 +48,57 @@ Currently exploring the intersection of **Human-Computer Interaction**, **behavi
 
 <br>
 
+<sub><samp>── 06 · TERMINAL</samp></sub>
+
 <img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/terminal.svg" width="100%" alt="terminal" />
 
 <br>
 
-### 02 — Selected Work
+<sub><samp>── 07 · SELECTED WORK</samp></sub>
 
-| Year | Project | Role | What it is |
-|:--|:--|:--|:--|
-| 2025 | [**Ehliyet Rehberim**](https://github.com/ummugulsunn/ehliyet-rehberim) | Mobile Product & UX | Driving-education app, live on Google Play with a **5.0 rating**. Every flow designed from scratch, used daily by real exam candidates. |
-| 2025 | [**Neurotech**](https://github.com/ummugulsunn/neurotech-blink-detection) | HCI & Bio-Signals | Touchless interaction prototype on real-time EEG. No screens, no touch — just thought. |
-| 2024 | [**FlowStateAI**](https://github.com/ummugulsunn/FlowStateAI) | AI & Behavior Analysis | Decodes user behavior from keystroke dynamics with Python-driven pattern recognition. |
+## Shipped, tested, **used.**
 
-<details>
-<summary><b>Stack per project</b></summary>
-<br>
+<table border="0">
+<tr>
+<td width="60%" valign="top">
 
-**Ehliyet Rehberim** &nbsp;
+| Year | Project | Role |
+|:--|:--|:--|
+| 2025 | [**Ehliyet Rehberim**](https://github.com/ummugulsunn/ehliyet-rehberim) | Mobile Product & UX |
+| 2025 | [**Neurotech**](https://github.com/ummugulsunn/neurotech-blink-detection) | HCI & Bio-Signals |
+| 2024 | [**FlowStateAI**](https://github.com/ummugulsunn/FlowStateAI) | AI & Behavior Analysis |
+
+**Ehliyet Rehberim** — Driving-education app, live on Google Play with a **5.0 rating**. Every flow designed from scratch, used daily by real exam candidates.
+
 ![Flutter](https://img.shields.io/badge/Flutter-161B22?style=flat-square&logo=flutter&logoColor=8B949E)
 ![Dart](https://img.shields.io/badge/Dart-161B22?style=flat-square&logo=dart&logoColor=8B949E)
 ![Google Play](https://img.shields.io/badge/Google_Play-161B22?style=flat-square&logo=googleplay&logoColor=8B949E)
 
-**Neurotech** &nbsp;
+**Neurotech** — Touchless interaction prototype on real-time EEG. No screens, no touch — just thought.
+
 ![C++](https://img.shields.io/badge/C++-161B22?style=flat-square&logo=cplusplus&logoColor=8B949E)
 ![Arduino](https://img.shields.io/badge/Arduino-161B22?style=flat-square&logo=arduino&logoColor=8B949E)
 ![EEG](https://img.shields.io/badge/EEG_Sensors-161B22?style=flat-square&logoColor=8B949E)
 
-**FlowStateAI** &nbsp;
+**FlowStateAI** — Decodes user behavior from keystroke dynamics with Python-driven pattern recognition.
+
 ![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=8B949E)
 ![Data Analysis](https://img.shields.io/badge/Data_Analysis-161B22?style=flat-square&logoColor=8B949E)
 
-</details>
+</td>
+<td width="40%" align="center" valign="middle">
+
+<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/lockscreen.svg" width="300" alt="lock screen" />
+
+</td>
+</tr>
+</table>
 
 <br>
 
-### 03 — Tech Stack
+<sub><samp>── 08 · TECH STACK</samp></sub>
+
+## Built **with.**
 
 **Languages & Frameworks**
 
@@ -101,7 +123,9 @@ Currently exploring the intersection of **Human-Computer Interaction**, **behavi
 
 <br>
 
-### 04 — GitHub Analytics
+<sub><samp>── 09 · GITHUB</samp></sub>
+
+## In **numbers.**
 
 <div align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=C9D1D9&text_color=8B949E&icon_color=D4956A&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="170" />
