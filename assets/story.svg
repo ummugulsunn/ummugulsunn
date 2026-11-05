@@ -1,36 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
-<style>.c{opacity:0;animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}</style>
-<defs><radialGradient id="glow" cx="85%" cy="0%" r="80%"><stop offset="0" stop-color="#B87333" stop-opacity="0.22"/><stop offset="1" stop-color="#0D1117" stop-opacity="0"/></radialGradient></defs>
-<rect width="1000" height="760" fill="#0D1117" rx="12"/><rect width="1000" height="760" fill="url(#glow)" rx="12"/>
-<g class="c" style="animation-delay:0.30s">
-<line x1="48" y1="62" x2="68" y2="62" stroke="#D4956A" stroke-width="1.5"/>
-<text x="78" y="66" font-size="11" fill="#D4956A" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" letter-spacing="3">01 · CONNECT</text>
-<text x="48" y="118" font-size="46" fill="#C9D1D9" font-weight="300" letter-spacing="-1"><tspan font-weight="300">It starts with </tspan><tspan font-weight="700">one user.</tspan></text>
-<text x="48" y="152" font-size="15" fill="#8B949E">One screen, one tap, and one person who needs it to just work.</text>
-<text x="48" y="174" font-size="15" fill="#8B949E">Every project I build starts and ends there.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
+<style>.c{opacity:0;animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}</style>
+<defs><radialGradient id="glow" cx="90%" cy="0%" r="75%"><stop offset="0" stop-color="#B87333" stop-opacity="0.2"/><stop offset="1" stop-color="#0D1117" stop-opacity="0"/></radialGradient></defs>
+<rect width="900" height="450" fill="#0D1117" rx="12"/><rect width="900" height="450" fill="url(#glow)" rx="12"/>
+<g class="c" style="animation-delay:0.20s">
+<line x1="40" y1="54" x2="60" y2="54" stroke="#D4956A" stroke-width="1.5"/>
+<text x="70" y="58" font-size="12" fill="#D4956A" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" letter-spacing="3">01 · CONNECT</text>
+<text x="40" y="114" font-size="44" fill="#C9D1D9" letter-spacing="-1"><tspan font-weight="300">It starts with </tspan><tspan font-weight="700">one user.</tspan></text>
+<text x="40" y="150" font-size="17" fill="#8B949E">One screen, one tap, and one person who needs it to just work.</text>
+<text x="40" y="175" font-size="17" fill="#8B949E">I'm a Computer Engineering student with a product-first mindset:</text>
+<text x="40" y="200" font-size="17" fill="#8B949E">I don't just write code, I design the experience around it.</text>
 </g>
-<line x1="48" y1="212" x2="952" y2="212" stroke="#21262D"/>
-<g class="c" style="animation-delay:0.75s">
-<line x1="48" y1="242" x2="68" y2="242" stroke="#D4956A" stroke-width="1.5"/>
-<text x="78" y="246" font-size="11" fill="#D4956A" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" letter-spacing="3">02 · SHIP</text>
-<text x="48" y="316" font-size="92" fill="#C9D1D9" font-weight="700" letter-spacing="-3">5.0 ★</text>
-<text x="48" y="348" font-size="15" fill="#8B949E">Ehliyet Rehberim on Google Play. Designed, built and shipped solo,</text>
-<text x="48" y="370" font-size="15" fill="#8B949E">used daily by people preparing for their driving exam.</text>
-</g>
-<line x1="48" y1="392" x2="952" y2="392" stroke="#21262D"/>
-<g class="c" style="animation-delay:1.20s">
-<line x1="48" y1="422" x2="68" y2="422" stroke="#D4956A" stroke-width="1.5"/>
-<text x="78" y="426" font-size="11" fill="#D4956A" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" letter-spacing="3">03 · SENSE</text>
-<text x="48" y="478" font-size="46" fill="#C9D1D9" font-weight="300" letter-spacing="-1"><tspan font-weight="300">No screens. No touch. </tspan><tspan font-weight="700">Just thought.</tspan></text>
-<text x="48" y="512" font-size="15" fill="#8B949E">Real-time EEG prototypes that turn a blink into a command.</text>
-<text x="48" y="534" font-size="15" fill="#8B949E">Brain-computer interfaces as the next interaction layer.</text>
-</g>
-<line x1="48" y1="572" x2="952" y2="572" stroke="#21262D"/>
-<g class="c" style="animation-delay:1.65s">
-<line x1="48" y1="602" x2="68" y2="602" stroke="#D4956A" stroke-width="1.5"/>
-<text x="78" y="606" font-size="11" fill="#D4956A" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" letter-spacing="3">04 · MEASURE</text>
-<text x="48" y="658" font-size="46" fill="#C9D1D9" font-weight="300" letter-spacing="-1"><tspan font-weight="300">Behavior is </tspan><tspan font-weight="700">data.</tspan></text>
-<text x="48" y="692" font-size="15" fill="#8B949E">FlowStateAI reads keystroke dynamics to understand</text>
-<text x="48" y="714" font-size="15" fill="#8B949E">how people really use a system, not how they say they do.</text>
+<line x1="40" y1="234" x2="860" y2="234" stroke="#21262D"/>
+<g class="c" style="animation-delay:0.70s">
+<line x1="40" y1="264" x2="60" y2="264" stroke="#D4956A" stroke-width="1.5"/>
+<text x="70" y="268" font-size="12" fill="#D4956A" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" letter-spacing="3">02 · SENSE</text>
+<text x="40" y="324" font-size="44" fill="#C9D1D9" letter-spacing="-1"><tspan font-weight="300">No screens. No touch. </tspan><tspan font-weight="700">Just thought.</tspan></text>
+<text x="40" y="360" font-size="17" fill="#8B949E">I prototype touchless interfaces with EEG sensors and study</text>
+<text x="40" y="385" font-size="17" fill="#8B949E">how people really behave, not how they say they do.</text>
+<text x="40" y="410" font-size="17" fill="#8B949E">HCI  ·  behavioral analysis  ·  mobile product.</text>
 </g>
 </svg>
