@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="302" viewBox="0 0 1000 302" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace">
+<style>.c{opacity:0;animation:in .01s linear forwards}@keyframes in{to{opacity:1}}
+    .cur{animation:blink 1s steps(1) infinite}@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}</style>
+<rect width="1000" height="302" fill="#0D1117" rx="12"/>
+<rect width="1000" height="36" fill="#161B22" rx="12"/><rect y="24" width="1000" height="12" fill="#161B22"/>
+<circle cx="22" cy="18" r="6" fill="#FF5F57" opacity="0.85"/>
+<circle cx="42" cy="18" r="6" fill="#FEBC2E" opacity="0.85"/>
+<circle cx="62" cy="18" r="6" fill="#28C840" opacity="0.85"/>
+<text x="500.0" y="22" font-size="11" fill="#8B949E" text-anchor="middle">ummugulsun@github ~ zsh</text>
+<text x="24" y="64" font-size="13" fill="#484F58" class="c" style="animation-delay:0.30s">$ </text>
+<text x="39.6" y="64" font-size="13" fill="#D4956A" class="c" style="animation-delay:0.30s" xml:space="preserve">w</text>
+<text x="47.4" y="64" font-size="13" fill="#D4956A" class="c" style="animation-delay:0.34s" xml:space="preserve">h</text>
+<text x="55.2" y="64" font-size="13" fill="#D4956A" class="c" style="animation-delay:0.38s" xml:space="preserve">o</text>
+<text x="63.0" y="64" font-size="13" fill="#D4956A" class="c" style="animation-delay:0.42s" xml:space="preserve">a</text>
+<text x="70.8" y="64" font-size="13" fill="#D4956A" class="c" style="animation-delay:0.46s" xml:space="preserve">m</text>
+<text x="78.6" y="64" font-size="13" fill="#D4956A" class="c" style="animation-delay:0.50s" xml:space="preserve">i</text>
+<text x="24" y="86" font-size="13" fill="#C9D1D9" class="c" style="animation-delay:0.89s" xml:space="preserve">ummugulsun · computer engineering student · product-first builder</text>
+<text x="24" y="108" font-size="13" fill="#484F58" class="c" style="animation-delay:1.44s">$ </text>
+<text x="39.6" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.44s" xml:space="preserve">c</text>
+<text x="47.4" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.48s" xml:space="preserve">a</text>
+<text x="55.2" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.52s" xml:space="preserve">t</text>
+<text x="63.0" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.56s" xml:space="preserve"> </text>
+<text x="70.8" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.60s" xml:space="preserve">i</text>
+<text x="78.6" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.64s" xml:space="preserve">n</text>
+<text x="86.4" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.68s" xml:space="preserve">t</text>
+<text x="94.2" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.72s" xml:space="preserve">e</text>
+<text x="102.0" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.76s" xml:space="preserve">r</text>
+<text x="109.8" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.80s" xml:space="preserve">e</text>
+<text x="117.6" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.84s" xml:space="preserve">s</text>
+<text x="125.4" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.88s" xml:space="preserve">t</text>
+<text x="133.2" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.92s" xml:space="preserve">s</text>
+<text x="141.0" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:1.96s" xml:space="preserve">.</text>
+<text x="148.8" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:2.00s" xml:space="preserve">t</text>
+<text x="156.6" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:2.04s" xml:space="preserve">x</text>
+<text x="164.4" y="108" font-size="13" fill="#D4956A" class="c" style="animation-delay:2.08s" xml:space="preserve">t</text>
+<text x="24" y="130" font-size="13" fill="#C9D1D9" class="c" style="animation-delay:2.47s" xml:space="preserve">human-computer interaction  ·  bio-signal interfaces  ·  behavioral analysis</text>
+<text x="24" y="152" font-size="13" fill="#484F58" class="c" style="animation-delay:3.02s">$ </text>
+<text x="39.6" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.02s" xml:space="preserve">l</text>
+<text x="47.4" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.06s" xml:space="preserve">s</text>
+<text x="55.2" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.10s" xml:space="preserve"> </text>
+<text x="63.0" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.14s" xml:space="preserve">~</text>
+<text x="70.8" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.18s" xml:space="preserve">/</text>
+<text x="78.6" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.22s" xml:space="preserve">p</text>
+<text x="86.4" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.26s" xml:space="preserve">r</text>
+<text x="94.2" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.30s" xml:space="preserve">o</text>
+<text x="102.0" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.34s" xml:space="preserve">j</text>
+<text x="109.8" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.38s" xml:space="preserve">e</text>
+<text x="117.6" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.42s" xml:space="preserve">c</text>
+<text x="125.4" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.46s" xml:space="preserve">t</text>
+<text x="133.2" y="152" font-size="13" fill="#D4956A" class="c" style="animation-delay:3.50s" xml:space="preserve">s</text>
+<text x="24" y="174" font-size="13" fill="#C9D1D9" class="c" style="animation-delay:3.89s" xml:space="preserve">ehliyet-rehberim/   neurotech-blink-detection/   FlowStateAI/</text>
+<text x="24" y="196" font-size="13" fill="#484F58" class="c" style="animation-delay:4.44s">$ </text>
+<text x="39.6" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.44s" xml:space="preserve">g</text>
+<text x="47.4" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.48s" xml:space="preserve">i</text>
+<text x="55.2" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.52s" xml:space="preserve">t</text>
+<text x="63.0" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.56s" xml:space="preserve"> </text>
+<text x="70.8" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.60s" xml:space="preserve">l</text>
+<text x="78.6" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.64s" xml:space="preserve">o</text>
+<text x="86.4" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.68s" xml:space="preserve">g</text>
+<text x="94.2" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.72s" xml:space="preserve"> </text>
+<text x="102.0" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.76s" xml:space="preserve">-</text>
+<text x="109.8" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.80s" xml:space="preserve">-</text>
+<text x="117.6" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.84s" xml:space="preserve">o</text>
+<text x="125.4" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.88s" xml:space="preserve">n</text>
+<text x="133.2" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.92s" xml:space="preserve">e</text>
+<text x="141.0" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:4.96s" xml:space="preserve">l</text>
+<text x="148.8" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.00s" xml:space="preserve">i</text>
+<text x="156.6" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.04s" xml:space="preserve">n</text>
+<text x="164.4" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.08s" xml:space="preserve">e</text>
+<text x="172.2" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.12s" xml:space="preserve"> </text>
+<text x="180.0" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.16s" xml:space="preserve">-</text>
+<text x="187.8" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.20s" xml:space="preserve">1</text>
+<text x="195.6" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.24s" xml:space="preserve"> </text>
+<text x="203.4" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.28s" xml:space="preserve">-</text>
+<text x="211.2" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.32s" xml:space="preserve">-</text>
+<text x="219.0" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.36s" xml:space="preserve">a</text>
+<text x="226.8" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.40s" xml:space="preserve">u</text>
+<text x="234.6" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.44s" xml:space="preserve">t</text>
+<text x="242.4" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.48s" xml:space="preserve">h</text>
+<text x="250.2" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.52s" xml:space="preserve">o</text>
+<text x="258.0" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.56s" xml:space="preserve">r</text>
+<text x="265.8" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.60s" xml:space="preserve">=</text>
+<text x="273.6" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.64s" xml:space="preserve">u</text>
+<text x="281.4" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.68s" xml:space="preserve">m</text>
+<text x="289.2" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.72s" xml:space="preserve">m</text>
+<text x="297.0" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.76s" xml:space="preserve">u</text>
+<text x="304.8" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.80s" xml:space="preserve">g</text>
+<text x="312.6" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.84s" xml:space="preserve">u</text>
+<text x="320.4" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.88s" xml:space="preserve">l</text>
+<text x="328.2" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.92s" xml:space="preserve">s</text>
+<text x="336.0" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:5.96s" xml:space="preserve">u</text>
+<text x="343.8" y="196" font-size="13" fill="#D4956A" class="c" style="animation-delay:6.00s" xml:space="preserve">n</text>
+<text x="24" y="218" font-size="13" fill="#C9D1D9" class="c" style="animation-delay:6.39s" xml:space="preserve">a5c3f2e  feat: ship a 5.0★ app to google play</text>
+<text x="24" y="240" font-size="13" fill="#484F58" class="c" style="animation-delay:6.94s">$ </text>
+<text x="39.6" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:6.94s" xml:space="preserve">.</text>
+<text x="47.4" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:6.98s" xml:space="preserve">/</text>
+<text x="55.2" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:7.02s" xml:space="preserve">s</text>
+<text x="63.0" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:7.06s" xml:space="preserve">t</text>
+<text x="70.8" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:7.10s" xml:space="preserve">a</text>
+<text x="78.6" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:7.14s" xml:space="preserve">t</text>
+<text x="86.4" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:7.18s" xml:space="preserve">u</text>
+<text x="94.2" y="240" font-size="13" fill="#D4956A" class="c" style="animation-delay:7.22s" xml:space="preserve">s</text>
+<text x="24" y="262" font-size="13" fill="#8B949E" class="c" style="animation-delay:7.61s" xml:space="preserve">[████████████░░░░]  building the next thing…</text>
+<text x="24" y="284" font-size="13" fill="#484F58" class="c" style="animation-delay:8.16s">$ </text>
+<text x="39.6" y="284" font-size="13" fill="#D4956A" class="c cur" style="animation-delay:8.51s">▌</text>
+</svg>

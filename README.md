@@ -1,18 +1,20 @@
 <div align="center">
 
-# Ummugulsun Turkmen
+<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/header.svg" width="100%" alt="ummugulsun — animated ascii banner" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=C9D1D9&center=true&vCenter=true&repeat=true&width=620&height=50&lines=Computer+Engineering+Student;HCI+%26+Product+Development;Crafting+User-Centric+Experiences)](https://git.io/typing-svg)
+<br>
 
-**I build user-centric apps and explore bio-signal interfaces.**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-6E7681?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ummugulsunturkmen)
-[![Portfolio](https://img.shields.io/badge/Portfolio-6E7681?style=for-the-badge&logo=safari&logoColor=white)](https://ummugulsun.me)
-[![Email](https://img.shields.io/badge/Email-6E7681?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ummugulsunturkmen@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=C9D1D9)](https://linkedin.com/in/ummugulsunturkmen)
+[![Portfolio](https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=safari&logoColor=C9D1D9)](https://ummugulsun.me)
+[![Email](https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=C9D1D9)](mailto:ummugulsunturkmen@gmail.com)
 
 </div>
 
----
+<br>
+
+<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/terminal.svg" width="100%" alt="terminal" />
+
+<br>
 
 ### About
 
@@ -87,28 +89,22 @@ Automation and analysis tool that decodes user behavior through keystroke dynami
 ### GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=C9D1D9&text_color=8B949E&icon_color=6E7681&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="170" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=C9D1D9&text_color=8B949E&icon_color=D4956A&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="170" />
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ummugulsunn&layout=compact&title_color=C9D1D9&text_color=8B949E&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="170" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=ummugulsunn&background=0D1117&ring=C9D1D9&fire=C9D1D9&currStreakNum=C9D1D9&currStreakLabel=8B949E&sideNums=C9D1D9&sideLabels=8B949E&dates=6E7681&hide_border=true" />
+  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=ummugulsunn&background=0D1117&ring=D4956A&fire=D4956A&currStreakNum=C9D1D9&currStreakLabel=8B949E&sideNums=C9D1D9&sideLabels=8B949E&dates=6E7681&hide_border=true" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg" width="500" />
-</div>
 
-<div align="center">
-
-<img src="https://camo.githubusercontent.com/2083d412b4df3a6481f937dcc8550bd46ac2d6d17344714ab42b5b464870277f/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f61332f64362f39372f61336436393730393030386230376339393631366435633738646632386264372e676966" width="120" />
-
-<br>
-
-Open to collaboration on HCI, mobile product, and AI projects.
+```
+> open to collaboration on HCI, mobile product, and AI projects_
+```
 
 </div>
