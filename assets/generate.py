@@ -57,72 +57,89 @@ def split_layers(line):
     bri = ''.join(c if c in "#%@" else ' ' for c in line)
     return dim, mid, bri
 
-# ------------------------------------------------------------------ header.svg
+# ------------------------------------------------------------------ header.svg  ("signal -> interface")
+# 0-1s: the canvas is noise (faint static). 1-2.5s: one bright scan line sweeps left to right and, where it
+# passes, the static resolves into the name. After: the name stays, the static breathes slowly, one line is typed.
 def build_header():
     import random, pyfiglet
-    random.seed(7)
-    H = 270
+    random.seed(11)
+    H = 320
     size, cw, lh = 12, 7.5, 15.0
-    cols, rows = int(W/cw), int(H/lh) + 1
-    nf, T = 36, 7.2
-    css = f".k{{opacity:0;animation:k {T}s steps(1) infinite}}@keyframes k{{0%{{opacity:1}}{100/nf:.4f}%{{opacity:0}}100%{{opacity:0}}}}\n"
-    css += ''.join(f".k{i}{{animation-delay:{i*T/nf:.3f}s}}\n" for i in range(nf))
-    css += ".in{opacity:0;animation:fi 1.0s ease forwards;animation-delay:1.2s}.in2{animation-delay:1.5s}@keyframes fi{to{opacity:1}}\n"
-    stops = ''.join(f'<stop offset="{i/(len(HOLO)-1):.3f}" stop-color="{c}"/>' for i, c in enumerate(HOLO))
+    cols, rows = 120, 21
+    NOISE = ".,:;-=+*"
+    TONES = [("#1C232C", 0.55), ("#2A323C", 0.33), ("#3D4753", 0.12)]       # dim / mid / brighter
+    # name mask from a block font, doubled vertically
+    fig = pyfiglet.Figlet(font="banner3", width=200).renderText("ummugulsun").rstrip("\n").split("\n")
+    mw = max(len(l) for l in fig); fig = [l.ljust(mw) for l in fig]
+    mx0, my0 = 6, 3
+    mask = set()
+    for r, l in enumerate(fig):
+        for c, ch in enumerate(l):
+            if ch != ' ':
+                mask.add((my0 + 2*r, mx0 + c)); mask.add((my0 + 2*r + 1, mx0 + c))
+    def pick_tone():
+        u = random.random(); acc = 0
+        for col, w in TONES:
+            acc += w
+            if u <= acc: return col
+        return TONES[-1][0]
+    def noise_layer():
+        """one static field: per tone, rows of chars (spaces elsewhere) so each tone is one <text> per row"""
+        parts = []
+        grid = [[(random.choice(NOISE), pick_tone()) for _ in range(cols)] for _ in range(rows)]
+        for col, _ in TONES:
+            for r in range(rows):
+                line = ''.join(ch if tone == col else ' ' for ch, tone in grid[r])
+                if line.strip(): parts.append(tl(0, 12 + r*lh, line, size, cw, col))
+        return ''.join(parts)
+    # the name: dense glyphs; edges a little lighter than the core
+    name_parts = []
+    for r in range(rows):
+        line = []
+        for c in range(cols):
+            if (r, c) in mask:
+                nb = sum(((r+dr, c+dc) in mask) for dr in (-1, 0, 1) for dc in (-1, 0, 1))
+                line.append('@' if nb >= 8 else ('#' if nb >= 6 else '%'))
+            else:
+                line.append(' ')
+        line = ''.join(line)
+        if line.strip():
+            # backing so the static underneath does not bleed through the glyphs
+            for c, ch in enumerate(line):
+                if ch != ' ':
+                    name_parts.append(f'<rect x="{c*cw:.1f}" y="{r*lh:.1f}" width="{cw:.1f}" height="{lh:.1f}" fill="{BG}"/>')
+            name_parts.append(tl(0, 13 + r*lh, line, 16, cw, "#E6EDF3", ' font-weight="bold"'))
+    reveal_x0, reveal_x1 = (mx0-1)*cw, (mx0+mw+1)*cw
+    css = """
+.nA{animation:xa 6s ease-in-out infinite}.nB{animation:xb 6s ease-in-out infinite}
+@keyframes xa{0%,100%{opacity:1}50%{opacity:0}}@keyframes xb{0%,100%{opacity:0}50%{opacity:1}}
+.static{animation:settle 1.4s ease forwards;animation-delay:1.6s}@keyframes settle{to{opacity:.55}}
+.ty{opacity:0;animation:fi .01s linear forwards}@keyframes fi{to{opacity:1}}
+.cur{opacity:0;animation:fi .01s linear 2.7s forwards, blink 1.1s steps(1) 2.7s infinite}@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+.sub{opacity:0;animation:fi 1s ease forwards;animation-delay:4.2s}
+"""
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{MONO}">',
          f'<style>{css}</style>',
          '<defs>'
-         f'<linearGradient id="holo" gradientUnits="userSpaceOnUse" spreadMethod="repeat" x1="0" y1="0" x2="600" y2="90">{stops}'
-         '<animateTransform attributeName="gradientTransform" type="translate" values="-600 0;0 0" dur="6s" repeatCount="indefinite"/></linearGradient>'
-         f'<linearGradient id="shade" x1="0" x2="1"><stop offset="0" stop-color="{BG}" stop-opacity="0.55"/><stop offset="0.55" stop-color="{BG}" stop-opacity="0.35"/>'
-         f'<stop offset="1" stop-color="{BG}" stop-opacity="0"/></linearGradient>'
          f'<clipPath id="r"><rect width="{W}" height="{H}" rx="14"/></clipPath>'
+         f'<clipPath id="reveal"><rect x="{reveal_x0:.1f}" y="0" width="0" height="{H}">'
+         f'<animate attributeName="width" from="0" to="{reveal_x1-reveal_x0:.1f}" begin="1.0s" dur="1.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/></rect></clipPath>'
+         '<linearGradient id="trail" x1="0" x2="1"><stop offset="0" stop-color="#E6EDF3" stop-opacity="0"/><stop offset="1" stop-color="#E6EDF3" stop-opacity="0.35"/></linearGradient>'
          '</defs>',
          f'<g clip-path="url(#r)"><rect width="{W}" height="{H}" fill="{BG}"/>']
-    # living ASCII field across the whole banner, quieter on the left where the name sits
-    frames = field_frames(cols, rows, nf, left_floor=0.42)
-    for i, fr in enumerate(frames):
-        parts = []
-        for r, line in enumerate(fr):
-            if not line.strip(): continue
-            dim, mid, bri = split_layers(line)
-            y = 12 + r*lh
-            if dim.strip(): parts.append(tl(0, y, dim, size, cw, FDIM))
-            if mid.strip(): parts.append(tl(0, y, mid, size, cw, FMID))
-            if bri.strip(): parts.append(tl(0, y, bri, size, cw, ACCENT))
-        p.append(f'<g class="k k{i}">' + ''.join(parts) + '</g>')
-    p.append(f'<rect width="{W}" height="{H}" fill="url(#shade)"/>')
-    # holographic pixel name, cells fly in from around and assemble
-    name = pyfiglet.Figlet(font="ansi_shadow", width=200).renderText("ummugulsun").rstrip("\n").split("\n")
-    bw, bh, ln = 8.0, 14.0, 2.0
-    x0, y0 = 48, 46
-    p.append('<g>')
-    for r, l in enumerate(name):
-        for c, ch in enumerate(l):
-            x, y = x0 + c*bw, y0 + r*bh
-            if ch == '█':
-                ang = random.uniform(0, 2*math.pi); rad = random.uniform(120, 420)
-                dx, dy = math.cos(ang)*rad, math.sin(ang)*rad
-                beg = random.uniform(0.05, 0.7)
-                p.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw-1:.1f}" height="{bh-1:.1f}" fill="url(#holo)" opacity="0">'
-                         f'<animateTransform attributeName="transform" type="translate" from="{dx:.0f} {dy:.0f}" to="0 0" begin="{beg:.2f}s" dur="1.0s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>'
-                         f'<animate attributeName="opacity" from="0" to="1" begin="{beg:.2f}s" dur="0.4s" fill="freeze"/></rect>')
-                continue
-            segs = []
-            if ch == '║': segs.append((x+bw/2-ln/2, y, ln, bh))
-            if ch == '═': segs.append((x, y+bh/2-ln/2, bw, ln))
-            if ch in '╔╚': segs.append((x+bw/2-ln/2, y+bh/2-ln/2, bw/2+ln/2, ln))
-            if ch in '╗╝': segs.append((x, y+bh/2-ln/2, bw/2+ln/2, ln))
-            if ch in '╔╗': segs.append((x+bw/2-ln/2, y+bh/2-ln/2, ln, bh/2+ln/2))
-            if ch in '╚╝': segs.append((x+bw/2-ln/2, y, ln, bh/2+ln/2))
-            for sx, sy, sw, sh in segs:
-                p.append(f'<rect x="{sx:.1f}" y="{sy:.1f}" width="{sw:.1f}" height="{sh:.1f}" fill="#1F262E" class="in"/>')
-    p.append('</g>')
-    # type under the name
-    p.append(f'<g font-family="{SANS}">')
-    p.append(f'<text class="in" x="{x0}" y="190" font-size="22" font-weight="600" fill="{FG}" letter-spacing="-0.3">I design experiences, then I ship them.</text>')
-    p.append(f'<text class="in in2" x="{x0}" y="222" font-size="14" fill="{DIM}">Computer Engineering student  ·  HCI  ·  bio-signal interfaces  ·  mobile product</text>')
-    p.append('</g>')
+    p.append('<g class="static"><g class="nA">' + noise_layer() + '</g><g class="nB">' + noise_layer() + '</g></g>')
+    p.append('<g clip-path="url(#reveal)">' + ''.join(name_parts) + '</g>')
+    # the scan line with a short trail, sweeping with the reveal, then gone
+    p.append(f'<g opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" begin="1.0s" dur="1.6s" fill="freeze"/>'
+             f'<g><animateTransform attributeName="transform" type="translate" from="{reveal_x0:.1f} 0" to="{reveal_x1:.1f} 0" begin="1.0s" dur="1.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>'
+             f'<rect x="-70" y="0" width="70" height="{H}" fill="url(#trail)"/><rect x="-1" y="0" width="2" height="{H}" fill="#FFFFFF"/></g></g>')
+    # typed line + subtitle
+    typed = "signal  →  interface"
+    tx, ty = mx0*cw, 12 + 18*lh
+    for i, ch in enumerate(typed):
+        p.append(f'<text x="{tx+i*cw:.1f}" y="{ty}" font-size="13" fill="#E6EDF3" class="ty" style="animation-delay:{2.7+i*0.06:.2f}s" xml:space="preserve">{esc(ch)}</text>')
+    p.append(f'<text x="{tx+len(typed)*cw:.1f}" y="{ty}" font-size="13" fill="#E6EDF3" class="cur">▌</text>')
+    p.append(f'<text class="sub" x="{tx}" y="{ty+26}" font-size="12" fill="{DIM}" xml:space="preserve">{esc("ummugulsun turkmen  ·  computer engineering student  ·  hci  ·  bio-signal interfaces  ·  mobile product")}</text>')
     p.append(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="#30363D"/>')
     p.append('</g></svg>')
     open(os.path.join(OUT, "header.svg"), "w").write('\n'.join(p))
