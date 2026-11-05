@@ -20,36 +20,31 @@ Currently exploring **Human-Computer Interaction**, **behavioral analysis** and 
 
 ### Featured Projects
 
-**[Ehliyet Rehberim](https://github.com/ummugulsunn/ehliyet-rehberim)** · Mobile Product & UX<br>
-Solo-developed driving education app, live on Google Play with a **5.0 rating**. Every flow designed from scratch, used daily by real exam candidates.<br>
-<sub>Flutter · Dart · Google Play</sub>
+**[Stremio Dual Subtitles](https://github.com/ummugulsunn/stremio-dual-subtitles)** · Language learning · [live](https://stremio-dual-subtitles.vercel.app)<br>
+Stremio addon that shows two subtitle languages at once, so you can watch films in the language you are learning without losing the plot. The most-used thing I have built.<br>
+<sub>JavaScript · Node.js · Vercel</sub>
 
-**[Neurotech](https://github.com/ummugulsunn/neurotech-blink-detection)** · HCI & Bio-Signals<br>
-Touchless interaction prototype powered by real-time EEG signal processing. No screens, no touch — a blink becomes a command.<br>
-<sub>C++ · Arduino · EEG sensors</sub>
+**[Ehliyet Rehberim](https://github.com/ummugulsunn/ehliyet-rehberim)** · Mobile product · Google Play<br>
+Driving-license exam prep app for Turkey, designed and built solo. Live on Google Play with a **5.0 rating**, used daily by real exam candidates.<br>
+<sub>Flutter · Dart</sub>
 
-**[FlowStateAI](https://github.com/ummugulsunn/FlowStateAI)** · AI & Behavior Analysis<br>
-Decodes how people really use a system from keystroke dynamics, combining Python data analysis with behavioral pattern recognition.<br>
-<sub>Python · Data Analysis</sub>
+**[Neurotech Blink Detection](https://github.com/ummugulsunn/neurotech-blink-detection)** · HCI · bio-signals<br>
+Touchless interaction prototype on real-time EEG: an Arduino reads the signal, a blink becomes a command. An R&D step toward brain-computer interfaces.<br>
+<sub>Python · C++ · Arduino · EEG</sub>
 
-### Tech Stack
+**[Automata Theory Simulator](https://github.com/ummugulsunn/automata-theory-simulator)** · Interactive learning tool · [live](https://ummugulsunn.github.io/automata-theory-simulator/)<br>
+Build, trace and convert DFA, NFA, PDA and Turing machines step by step in the browser. No framework, no backend, just a well-designed workspace.<br>
+<sub>JavaScript · HTML · CSS</sub>
 
-![Python](https://img.shields.io/badge/Python-161B22?style=for-the-badge&logo=python&logoColor=8B949E)
-![Dart](https://img.shields.io/badge/Dart-161B22?style=for-the-badge&logo=dart&logoColor=8B949E)
-![Flutter](https://img.shields.io/badge/Flutter-161B22?style=for-the-badge&logo=flutter&logoColor=8B949E)
-![C++](https://img.shields.io/badge/C++-161B22?style=for-the-badge&logo=cplusplus&logoColor=8B949E)
-![SQL](https://img.shields.io/badge/SQL-161B22?style=for-the-badge&logo=postgresql&logoColor=8B949E)
-![Git](https://img.shields.io/badge/Git-161B22?style=for-the-badge&logo=git&logoColor=8B949E)
-![Android Studio](https://img.shields.io/badge/Android_Studio-161B22?style=for-the-badge&logo=androidstudio&logoColor=8B949E)
-![UI/UX](https://img.shields.io/badge/UI%2FUX-D4956A?style=for-the-badge&logoColor=0D1117)
-![Behavior Analysis](https://img.shields.io/badge/Behavior_Analysis-8B949E?style=for-the-badge)
-![Microcopy](https://img.shields.io/badge/Microcopy-6E7681?style=for-the-badge)
+<sub>Also on the shelf: [toshiba-tv](https://github.com/ummugulsunn/toshiba-tv) (mirror a Mac to a non-Android TV over DLNA) · [webos-magic-caster](https://github.com/ummugulsunn/webos-magic-caster) (LG webOS remote & caster) · [GestureGroove](https://github.com/ummugulsunn/gesture-groove-imageprocessing-final-project) (play music with hand gestures) · [prayertimer](https://github.com/ummugulsunn/prayertimer) (macOS menu-bar app)</sub>
 
-### GitHub
+### Stack
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=E6EDF3&text_color=8B949E&icon_color=D4956A&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ummugulsunn&layout=compact&title_color=E6EDF3&text_color=8B949E&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="165" />
-</div>
+**Languages** &nbsp; Python · Dart · JavaScript · C++ · SQL<br>
+**Mobile & web** &nbsp; Flutter · Node.js · Android Studio<br>
+**Hardware & signals** &nbsp; Arduino · EEG · image processing<br>
+**Product** &nbsp; UI/UX · behavioral analysis · microcopy
+
+<br>
 
 <div align="center"><sub>Open to collaboration on HCI, mobile product and AI projects.</sub></div>
