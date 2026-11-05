@@ -189,3 +189,24 @@ def build_header():
 
 build_header()
 print('header.svg', os.path.getsize(os.path.join(OUT, 'header.svg')), 'bytes')
+
+# ------------------------------------------------------------------ cat.svg (the cat GIF, converted to ASCII frames in cat.json)
+def build_cat():
+    import json
+    here = os.path.dirname(os.path.abspath(__file__))
+    d = json.load(open(os.path.join(here, "cat.json")))
+    cols, rows, frames, ms = d["cols"], d["rows"], d["frames"], d["duration_ms"]
+    size, cw, lh = 11, 6.6, 12.0
+    CW, CH = int(cols*cw + 24), int(rows*lh + 24)
+    nf, T = len(frames), len(frames)*ms/1000.0
+    css = f".f{{opacity:0;animation:cat {T:.3f}s steps(1) infinite}}@keyframes cat{{0%{{opacity:1}}{100/nf:.4f}%{{opacity:0}}100%{{opacity:0}}}}\n"
+    css += ''.join(f".f{i}{{animation-delay:{i*T/nf:.3f}s}}\n" for i in range(nf))
+    p = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{CW}" height="{CH}" viewBox="0 0 {CW} {CH}" font-family="{MONO}">',
+         f'<style>{css}</style>', f'<rect width="{CW}" height="{CH}" fill="{BG}" rx="12"/>']
+    for i, fr in enumerate(frames):
+        p.append(f'<g class="f f{i}">' + ''.join(tl(12, 12+size+r*lh, l, size, cw, FG) for r, l in enumerate(fr) if l.strip()) + '</g>')
+    p.append('</svg>')
+    open(os.path.join(OUT, "cat.svg"), "w").write('\n'.join(p))
+
+build_cat()
+print('cat.svg', os.path.getsize(os.path.join(OUT, 'cat.svg')), 'bytes')
