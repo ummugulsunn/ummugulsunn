@@ -1,141 +1,55 @@
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/header.svg" width="100%" alt="ummugulsun - animated ascii banner" />
-
-</div>
-
-<pre>
-+==============================================================================+
-|  01 / ABOUT                                                                  |
-+==============================================================================+
-|                                                                              |
-|         _              _                                                     |
-|    __ _| |__  ___ _  _| |_                                                   |
-|   / _` | '_ \/ _ \ || |  _|                                                  |
-|   \__,_|_.__/\___/\_,_|\__|                                                  |
-|                                                                              |
-|   Computer Engineering student with a product-first mindset. I don't just    |
-|   write code -- I design experiences. From shipping a 5-star rated app on    |
-|   Google Play to prototyping touchless interfaces with EEG sensors, every    |
-|   project starts and ends with the user.                                     |
-|                                                                              |
-|   currently exploring                                                        |
-|   .----------------------------. .---------------------.                     |
-|   | human-computer interaction | | behavioral analysis |                     |
-|   '----------------------------' '---------------------'                     |
-|   .----------------------------.                                             |
-|   | mobile product development |                                             |
-|   '----------------------------'                                             |
-|                                                                              |
-+------------------------------------------------------------------------------+
-</pre>
+<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/header.svg" width="100%" alt="Ummugulsun Turkmen — I design experiences, then I ship them." />
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/cat.svg" width="300" alt="ascii cat, typing" />
-
-<sub><samp>// ascii.cat is typing...</samp></sub>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=C9D1D9)](https://linkedin.com/in/ummugulsunturkmen)
+[![Portfolio](https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=safari&logoColor=C9D1D9)](https://ummugulsun.me)
+[![Email](https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=C9D1D9)](mailto:ummugulsunturkmen@gmail.com)
 
 </div>
 
-<pre>
-+==============================================================================+
-|  02 / STACK                                                                  |
-+==============================================================================+
-|                                                                              |
-|       _           _                                                          |
-|    __| |_ __ _ __| |__                                                       |
-|   (_-&lt;  _/ _` / _| / /                                                       |
-|   /__/\__\__,_\__|_\_\                                                       |
-|                                                                              |
-|   languages &amp; frameworks                                                     |
-|   .--------. .------. .-----. .-----. .---------.                            |
-|   | python | | dart | | c++ | | sql | | flutter |                            |
-|   '--------' '------' '-----' '-----' '---------'                            |
-|                                                                              |
-|   tools &amp; platforms                                                          |
-|   .---------. .----------------. .-----. .---------.                         |
-|   | vs code | | android studio | | git | | arduino |                         |
-|   '---------' '----------------' '-----' '---------'                         |
-|                                                                              |
-|   product &amp; design                                                           |
-|   .-------. .-------------------. .-----------. .-----------.                |
-|   | ui/ux | | behavior analysis | | microcopy | | google pm |                |
-|   '-------' '-------------------' '-----------' '-----------'                |
-|                                                                              |
-+------------------------------------------------------------------------------+
-</pre>
+<img align="right" width="190" src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/cat.svg" alt="ascii cat, typing" />
 
-<pre>
-+==============================================================================+
-|  03 / SELECTED WORK                                                          |
-+==============================================================================+
-|                                                                              |
-|                  _        _                                                  |
-|    _ __ _ _ ___ (_)___ __| |_ ___                                            |
-|   | '_ \ '_/ _ \| / -_) _|  _(_-&lt;                                            |
-|   | .__/_| \___// \___\__|\__/__/                                            |
-|   |_|         |__/                                                           |
-|                                                                              |
-+------------------------------------------------------------------------------+
-|   .----.   EHLIYET REHBERIM                           mobile product &amp; ux    |
-|   |####|   Solo-developed driving education app, live on Google Play with    |
-|   |####|   a 5.0 rating. Every flow designed from scratch; used daily by     |
-|   |    |   people preparing for their driving exam.                          |
-|   '-o--'   flutter . dart . google play                     <a href="https://github.com/ummugulsunn/ehliyet-rehberim">[ view repo ]</a>    |
-+------------------------------------------------------------------------------+
-|            NEUROTECH                                    hci &amp; bio-signals    |
-|   .-""-.   Touchless interaction prototype on real-time EEG signal           |
-|  ( (@) )   processing. No screens, no touch: a blink becomes a command.      |
-|   '-..-'                                                                     |
-|            c++ . arduino . eeg sensors                      <a href="https://github.com/ummugulsunn/neurotech-blink-detection">[ view repo ]</a>    |
-+------------------------------------------------------------------------------+
-|   .-----.  FLOWSTATEAI                             ai &amp; behavior analysis    |
-|   |=====|  Decodes how people really use a system from keystroke             |
-|   |=====|  dynamics, combining Python data analysis with behavioral          |
-|   |_____|  pattern recognition.                                              |
-|            python . data analysis                           <a href="https://github.com/ummugulsunn/FlowStateAI">[ view repo ]</a>    |
-+------------------------------------------------------------------------------+
-</pre>
+### About
 
-<pre>
-+==============================================================================+
-|  04 / GITHUB                                                                 |
-+==============================================================================+
-|                                                                              |
-|       _        _                                                             |
-|    __| |_ __ _| |_ ___                                                       |
-|   (_-&lt;  _/ _` |  _(_-&lt;                                                       |
-|   /__/\__\__,_|\__/__/                                                       |
-|                                                                              |
-|   public repos     37   ############################............             |
-|   stars earned     53   ########################################             |
-|   followers         6   #####...................................             |
-|                                                                              |
-|   languages across public repos                                              |
-|   python           9   ########################################              |
-|   html             5   ######################..................              |
-|   typescript       4   ##################......................              |
-|   javascript       2   #########...............................              |
-|   dart             2   #########...............................              |
-|   php              1   ####....................................              |
-|                                                                              |
-|   on github since oct 2023   .   last refreshed 2026-11-05                   |
-|                                                                              |
-+------------------------------------------------------------------------------+
-</pre>
+Computer Engineering student with a product-first mindset. I don't just write code — I design experiences. From shipping a **5-star rated app on Google Play** to prototyping **touchless interfaces with EEG sensors**, every project starts and ends with the user.
 
-<pre>
-+==============================================================================+
-|  05 / CONTACT                                                                |
-+==============================================================================+
-|                                                                              |
-|   open to collaboration on HCI, mobile product and AI projects.              |
-|                                                                              |
-|   <a href="https://linkedin.com/in/ummugulsunturkmen">[ linkedin ]</a>   <a href="https://ummugulsun.me">[ portfolio ]</a>   <a href="mailto:ummugulsunturkmen@gmail.com">[ email ]</a>   <a href="https://github.com/ummugulsunn">[ github ]</a>                      |
-|                                                                              |
-+------------------------------------------------------------------------------+
-</pre>
+Currently exploring **Human-Computer Interaction**, **behavioral analysis** and **mobile product development**.
 
-<div align="center"><sub><samp>built in ascii, by hand. thanks for scrolling.</samp></sub></div>
+<br clear="right" />
 
+### Featured Projects
+
+**[Ehliyet Rehberim](https://github.com/ummugulsunn/ehliyet-rehberim)** · Mobile Product & UX<br>
+Solo-developed driving education app, live on Google Play with a **5.0 rating**. Every flow designed from scratch, used daily by real exam candidates.<br>
+<sub>Flutter · Dart · Google Play</sub>
+
+**[Neurotech](https://github.com/ummugulsunn/neurotech-blink-detection)** · HCI & Bio-Signals<br>
+Touchless interaction prototype powered by real-time EEG signal processing. No screens, no touch — a blink becomes a command.<br>
+<sub>C++ · Arduino · EEG sensors</sub>
+
+**[FlowStateAI](https://github.com/ummugulsunn/FlowStateAI)** · AI & Behavior Analysis<br>
+Decodes how people really use a system from keystroke dynamics, combining Python data analysis with behavioral pattern recognition.<br>
+<sub>Python · Data Analysis</sub>
+
+### Tech Stack
+
+![Python](https://img.shields.io/badge/Python-161B22?style=for-the-badge&logo=python&logoColor=8B949E)
+![Dart](https://img.shields.io/badge/Dart-161B22?style=for-the-badge&logo=dart&logoColor=8B949E)
+![Flutter](https://img.shields.io/badge/Flutter-161B22?style=for-the-badge&logo=flutter&logoColor=8B949E)
+![C++](https://img.shields.io/badge/C++-161B22?style=for-the-badge&logo=cplusplus&logoColor=8B949E)
+![SQL](https://img.shields.io/badge/SQL-161B22?style=for-the-badge&logo=postgresql&logoColor=8B949E)
+![Git](https://img.shields.io/badge/Git-161B22?style=for-the-badge&logo=git&logoColor=8B949E)
+![Android Studio](https://img.shields.io/badge/Android_Studio-161B22?style=for-the-badge&logo=androidstudio&logoColor=8B949E)
+![UI/UX](https://img.shields.io/badge/UI%2FUX-D4956A?style=for-the-badge&logoColor=0D1117)
+![Behavior Analysis](https://img.shields.io/badge/Behavior_Analysis-8B949E?style=for-the-badge)
+![Microcopy](https://img.shields.io/badge/Microcopy-6E7681?style=for-the-badge)
+
+### GitHub
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=E6EDF3&text_color=8B949E&icon_color=D4956A&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ummugulsunn&layout=compact&title_color=E6EDF3&text_color=8B949E&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="165" />
+</div>
+
+<div align="center"><sub>Open to collaboration on HCI, mobile product and AI projects.</sub></div>
