@@ -211,3 +211,35 @@ def build_terminal():
 
 build_header(); build_terminal()
 for f in os.listdir(OUT): print(f, os.path.getsize(os.path.join(OUT, f)), "bytes")
+
+# ---------------------------------------------------------------- footer.svg (website-style marquee)
+def build_footer():
+    W, H = 1000, 150
+    size, cw = 15, 9.0
+    items = ["OPEN TO COLLABORATION", "HCI", "MOBILE PRODUCT", "BIO-SIGNAL INTERFACES", "BEHAVIORAL ANALYSIS", "AI"]
+    row = ("   ✦   ".join(items)) + "   ✦   "
+    unit = len(row)*cw
+    reps = int(W*2/unit) + 2
+    line1 = row*reps
+    items2 = ["design experiences, not just code", "ship it to real users", "measure the behavior", "iterate"]
+    row2 = ("   ·   ".join(items2)) + "   ·   "
+    unit2 = len(row2)*cw*0.8
+    line2 = row2*(int(W*2/unit2)+2)
+    p = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{MONO}">']
+    p.append('<defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0D1117"/><stop offset="0.1" stop-color="#0D1117" stop-opacity="0"/>'
+             '<stop offset="0.9" stop-color="#0D1117" stop-opacity="0"/><stop offset="1" stop-color="#0D1117"/></linearGradient>'
+             f'<clipPath id="clip"><rect width="{W}" height="{H}"/></clipPath></defs>')
+    p.append(f'<rect width="{W}" height="{H}" fill="{BG}" rx="12"/>')
+    p.append(f'<line x1="0" y1="52" x2="{W}" y2="52" stroke="#21262D"/><line x1="0" y1="98" x2="{W}" y2="98" stroke="#21262D"/>')
+    p.append('<g clip-path="url(#clip)">')
+    p.append(f'<g><animateTransform attributeName="transform" type="translate" from="0 0" to="{-unit:.1f} 0" dur="14s" repeatCount="indefinite"/>'
+             + text_line(0, 36, line1, size, cw, FG, ' font-weight="bold" letter-spacing="1"') + '</g>')
+    p.append(f'<g><animateTransform attributeName="transform" type="translate" from="{-unit2:.1f} 0" to="0 0" dur="18s" repeatCount="indefinite"/>'
+             + text_line(0, 80, line2, 12, cw*0.8, ACCENT) + '</g>')
+    p.append('</g>')
+    p.append(f'<text x="{W/2}" y="128" font-size="11" fill="{MUTED}" text-anchor="middle" xml:space="preserve">{esc("// thanks for scrolling  ·  built with ascii, coffee and a 5.0★ app")}</text>')
+    p.append(f'<rect width="{W}" height="{H}" fill="url(#fade)"/>')
+    p.append('</svg>')
+    open(os.path.join(OUT, "footer.svg"), "w").write('\n'.join(p))
+
+build_footer()

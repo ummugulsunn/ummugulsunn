@@ -12,19 +12,71 @@
 
 <br>
 
+<table border="0">
+<tr>
+<td width="64%" valign="top">
+
+### 01 — About
+
+Computer Engineering student with a **product-first mindset**. I don't just write code — I design experiences. From shipping a **5-star rated app on Google Play** to prototyping **touchless interfaces with EEG sensors**, every project starts and ends with the user.
+
+Currently exploring the intersection of **Human-Computer Interaction**, **behavioral analysis**, and **mobile product development**.
+
+<br>
+
+**Now**
+
+- 🔭 Building mobile products people open every day
+- 🧠 Researching brain-computer interfaces & bio-signals
+- 🌱 Learning behavioral analytics & product strategy
+- 📍 Open to collaboration on HCI, mobile and AI
+
+</td>
+<td width="36%" align="center" valign="middle">
+
+<img src="https://camo.githubusercontent.com/2083d412b4df3a6481f937dcc8550bd46ac2d6d17344714ab42b5b464870277f/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f61332f64362f39372f61336436393730393030386230376339393631366435633738646632386264372e676966" width="280" alt="cat coding" />
+
+</td>
+</tr>
+</table>
+
+<br>
+
 <img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/terminal.svg" width="100%" alt="terminal" />
 
 <br>
 
-### About
+### 02 — Selected Work
 
-Computer Engineering student with a product-first mindset. I don't just write code — I design experiences. From shipping a 5-star rated app on Google Play to prototyping touchless interfaces with EEG sensors, every project starts and ends with the user.
+| Year | Project | Role | What it is |
+|:--|:--|:--|:--|
+| 2025 | [**Ehliyet Rehberim**](https://github.com/ummugulsunn/ehliyet-rehberim) | Mobile Product & UX | Driving-education app, live on Google Play with a **5.0 rating**. Every flow designed from scratch, used daily by real exam candidates. |
+| 2025 | [**Neurotech**](https://github.com/ummugulsunn/neurotech-blink-detection) | HCI & Bio-Signals | Touchless interaction prototype on real-time EEG. No screens, no touch — just thought. |
+| 2024 | [**FlowStateAI**](https://github.com/ummugulsunn/FlowStateAI) | AI & Behavior Analysis | Decodes user behavior from keystroke dynamics with Python-driven pattern recognition. |
 
-Currently exploring the intersection of **Human-Computer Interaction**, **behavioral analysis**, and **mobile product development**.
+<details>
+<summary><b>Stack per project</b></summary>
+<br>
 
----
+**Ehliyet Rehberim** &nbsp;
+![Flutter](https://img.shields.io/badge/Flutter-161B22?style=flat-square&logo=flutter&logoColor=8B949E)
+![Dart](https://img.shields.io/badge/Dart-161B22?style=flat-square&logo=dart&logoColor=8B949E)
+![Google Play](https://img.shields.io/badge/Google_Play-161B22?style=flat-square&logo=googleplay&logoColor=8B949E)
 
-### Tech Stack
+**Neurotech** &nbsp;
+![C++](https://img.shields.io/badge/C++-161B22?style=flat-square&logo=cplusplus&logoColor=8B949E)
+![Arduino](https://img.shields.io/badge/Arduino-161B22?style=flat-square&logo=arduino&logoColor=8B949E)
+![EEG](https://img.shields.io/badge/EEG_Sensors-161B22?style=flat-square&logoColor=8B949E)
+
+**FlowStateAI** &nbsp;
+![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=8B949E)
+![Data Analysis](https://img.shields.io/badge/Data_Analysis-161B22?style=flat-square&logoColor=8B949E)
+
+</details>
+
+<br>
+
+### 03 — Tech Stack
 
 **Languages & Frameworks**
 
@@ -47,46 +99,9 @@ Currently exploring the intersection of **Human-Computer Interaction**, **behavi
 ![Microcopy](https://img.shields.io/badge/Microcopy-6E7681?style=for-the-badge)
 ![Google PM](https://img.shields.io/badge/Google_PM-484F58?style=for-the-badge&logo=google&logoColor=C9D1D9)
 
----
-
-### Featured Projects
-
-**Ehliyet Rehberim** — Mobile Product & UX
-
-Solo-developed driving education app, live on Google Play with a **5.0 rating**. Designed every user flow from scratch, defined UI principles, and shipped a product that real users depend on daily to prepare for their driving license exams.
-
-![Flutter](https://img.shields.io/badge/Flutter-161B22?style=flat-square&logo=flutter&logoColor=8B949E)
-![Dart](https://img.shields.io/badge/Dart-161B22?style=flat-square&logo=dart&logoColor=8B949E)
-![Google Play](https://img.shields.io/badge/Google_Play-161B22?style=flat-square&logo=googleplay&logoColor=8B949E)
-
-[![View Project](https://img.shields.io/badge/View%20Project%20%E2%86%92-8B949E?style=flat-square)](https://github.com/ummugulsunn/ehliyet-rehberim)
-
 <br>
 
-**Neurotech** — HCI & Bio-Signals
-
-Touchless interaction prototype powered by real-time EEG signal processing. An R&D project exploring how brain-computer interfaces can redefine human-computer interaction — no screens, no touch, just thought.
-
-![C++](https://img.shields.io/badge/C++-161B22?style=flat-square&logo=cplusplus&logoColor=8B949E)
-![Arduino](https://img.shields.io/badge/Arduino-161B22?style=flat-square&logo=arduino&logoColor=8B949E)
-![EEG](https://img.shields.io/badge/EEG_Sensors-161B22?style=flat-square&logoColor=8B949E)
-
-[![View Project](https://img.shields.io/badge/View%20Project%20%E2%86%92-8B949E?style=flat-square)](https://github.com/ummugulsunn/neurotech-blink-detection)
-
-<br>
-
-**FlowStateAI** — AI & Behavior Analysis
-
-Automation and analysis tool that decodes user behavior through keystroke dynamics. Combines Python-driven data analysis with behavioral pattern recognition to understand how people truly interact with systems.
-
-![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=8B949E)
-![Data Analysis](https://img.shields.io/badge/Data_Analysis-161B22?style=flat-square&logoColor=8B949E)
-
-[![View Project](https://img.shields.io/badge/View%20Project%20%E2%86%92-8B949E?style=flat-square)](https://github.com/ummugulsunn/FlowStateAI)
-
----
-
-### GitHub Analytics
+### 04 — GitHub Analytics
 
 <div align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ummugulsunn&show_icons=true&include_all_commits=true&count_private=true&title_color=C9D1D9&text_color=8B949E&icon_color=D4956A&bg_color=0D1117&hide_border=true&cache_seconds=86400" height="170" />
@@ -101,10 +116,4 @@ Automation and analysis tool that decodes user behavior through keystroke dynami
 
 <br>
 
-<div align="center">
-
-```
-> open to collaboration on HCI, mobile product, and AI projects_
-```
-
-</div>
+<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/footer.svg" width="100%" alt="footer" />

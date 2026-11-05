@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" font-family="'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace">
+<defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0D1117"/><stop offset="0.1" stop-color="#0D1117" stop-opacity="0"/><stop offset="0.9" stop-color="#0D1117" stop-opacity="0"/><stop offset="1" stop-color="#0D1117"/></linearGradient><clipPath id="clip"><rect width="1000" height="150"/></clipPath></defs>
+<rect width="1000" height="150" fill="#0D1117" rx="12"/>
+<line x1="0" y1="52" x2="1000" y2="52" stroke="#21262D"/><line x1="0" y1="98" x2="1000" y2="98" stroke="#21262D"/>
+<g clip-path="url(#clip)">
+<g><animateTransform attributeName="transform" type="translate" from="0 0" to="-1098.0 0" dur="14s" repeatCount="indefinite"/><text x="0" y="36" font-size="15" fill="#C9D1D9" textLength="3294.0" lengthAdjust="spacing" xml:space="preserve" font-weight="bold" letter-spacing="1">OPEN TO COLLABORATION   ✦   HCI   ✦   MOBILE PRODUCT   ✦   BIO-SIGNAL INTERFACES   ✦   BEHAVIORAL ANALYSIS   ✦   AI   ✦   OPEN TO COLLABORATION   ✦   HCI   ✦   MOBILE PRODUCT   ✦   BIO-SIGNAL INTERFACES   ✦   BEHAVIORAL ANALYSIS   ✦   AI   ✦   OPEN TO COLLABORATION   ✦   HCI   ✦   MOBILE PRODUCT   ✦   BIO-SIGNAL INTERFACES   ✦   BEHAVIORAL ANALYSIS   ✦   AI   ✦   </text></g>
+<g><animateTransform attributeName="transform" type="translate" from="-784.8 0" to="0 0" dur="18s" repeatCount="indefinite"/><text x="0" y="80" font-size="12" fill="#D4956A" textLength="3139.2" lengthAdjust="spacing" xml:space="preserve">design experiences, not just code   ·   ship it to real users   ·   measure the behavior   ·   iterate   ·   design experiences, not just code   ·   ship it to real users   ·   measure the behavior   ·   iterate   ·   design experiences, not just code   ·   ship it to real users   ·   measure the behavior   ·   iterate   ·   design experiences, not just code   ·   ship it to real users   ·   measure the behavior   ·   iterate   ·   </text></g>
+</g>
+<text x="500.0" y="128" font-size="11" fill="#484F58" text-anchor="middle" xml:space="preserve">// thanks for scrolling  ·  built with ascii, coffee and a 5.0★ app</text>
+<rect width="1000" height="150" fill="url(#fade)"/>
+</svg>
