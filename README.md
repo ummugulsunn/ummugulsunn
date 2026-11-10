@@ -19,11 +19,11 @@ I build user-centric apps and explore bio-signal interfaces. Computer Engineerin
 
 ### Streak
 
-<img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/koi.webp" width="100%" alt="a koi swimming, drawn in characters" />
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=ummugulsunn&background=0A1E34&ring=22D3EE&fire=F97316&currStreakNum=F0F6FA&currStreakLabel=7DD3E8&sideNums=F0F6FA&sideLabels=7896AA&dates=5A7890&stroke=16405E&hide_border=true" width="100%" alt="GitHub streak" />
+  <img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/koi/koi.gif" width="256" alt="my koi, drawn from my GitHub activity" /><br>
+  <img src="https://streak-stats.demolab.com/?user=ummugulsunn&background=0D1117&ring=22D3EE&fire=F97316&currStreakNum=E6EDF3&currStreakLabel=7DD3E8&sideNums=E6EDF3&sideLabels=8B949E&dates=6E7681&stroke=30363D&hide_border=true" alt="GitHub streak" />
 </p>
 
-<p align="center"><img width="120" src="https://camo.githubusercontent.com/2083d412b4df3a6481f937dcc8550bd46ac2d6d17344714ab42b5b464870277f/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f61332f64362f39372f61336436393730393030386230376339393631366435633738646632386264372e676966" alt="cat" /></p>
+<p align="center"><img width="200" src="https://camo.githubusercontent.com/2083d412b4df3a6481f937dcc8550bd46ac2d6d17344714ab42b5b464870277f/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f61332f64362f39372f61336436393730393030386230376339393631366435633738646632386264372e676966" alt="cat" /></p>
 <p align="center">Open to collaboration on HCI, mobile product and AI projects.</p>
-<p align="center"><sub><samp>the lilies and the koi are drawn in code, one character at a time.</samp></sub></p>
+<p align="center"><sub><samp>the lilies are drawn in code, one character at a time · the koi grows with my commits, by <a href="https://github.com/yalongwastaken/git-koi">git-koi</a></samp></sub></p>
