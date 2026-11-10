@@ -49,3 +49,16 @@ cat.json); `wrap2.py <theme>` renders README.md through GitHub's markdown API in
 - GitHub README column is ~690–1010px wide; SVG text must be ≥15px at 900px width to stay readable.
 - `github-readme-stats-sigma-five.vercel.app` (used in the original README) is down; the official
   `github-readme-stats.vercel.app` and `streak-stats.demolab.com` work.
+
+## Character-mosaic animations (Nov 10)
+
+The user showed reference reels (git-koi, an ASCII eye "The Connection", an ASCII lily bouquet) and wants
+that dense, coloured, glowing look, not thin line-art ASCII. SVG text cannot carry that density, so these
+are rendered to animated WebP: paint the scene with PIL/numpy, map every cell to a glyph + colour, add bloom.
+
+- `assets/mosaic/mosaic.py` shared renderer; `flower.py` -> `lily.webp`, `koi.py` -> `koi.webp` (both approved: "iyi duruyor").
+- `connection.py` (letter field with eyes, zoom into pupil, two profiles merge) and `eye2.py` (single turquoise eye)
+  are drafts; the user has not approved them. Eyes in the letter field look cartoonish.
+- Run: `pip install numpy pillow && python3 assets/mosaic/flower.py assets` (needs DejaVu Sans Mono Bold).
+- Thin-line demos (TerminalTextEffects decrypt, asciimatics plasma, line-art koi) were rejected as "not like the videos".
+- git-koi itself (yalongwastaken/git-koi, a GitHub Action) was not installed: its repo could not be reached from the cloud session.

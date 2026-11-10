@@ -3,6 +3,11 @@
 <img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/about.svg" width="100%" alt="About" />
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/koi.webp" width="58%" alt="koi, drawn in characters" />
+  <img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/lily.webp" width="40%" alt="lily bouquet, drawn in characters" />
+</p>
+
+<p align="center">
   <a href="https://ummugulsun.me"><img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/card-glowisland.svg" width="49%" alt="GlowIsland" /></a>
   <a href="https://ummugulsun.me"><img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/card-faceglow.svg" width="49%" alt="FaceGlow" /></a>
   <a href="https://github.com/ummugulsunn/stremio-dual-subtitles"><img src="https://raw.githubusercontent.com/ummugulsunn/ummugulsunn/main/assets/card-stremio.svg" width="49%" alt="Stremio Dual Subtitles" /></a>
