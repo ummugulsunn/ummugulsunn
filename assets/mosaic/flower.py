@@ -110,7 +110,7 @@ def paint(t):
     return im.filter(ImageFilter.GaussianBlur(0.8)).resize((COLS, ROWS), Image.BOX)
 
 N = 66
-frames = [M.ramp(paint(i/(N-1)), gamma=0.6, bloom=0.4, boost=1.35) for i in range(N)]
+frames = [M.ramp(paint(i/(N-1)), gamma=0.6, bloom=0.4, boost=1.35, bg=np.array([13, 17, 23.])) for i in range(N)]
 durs = [90]*N; durs[-1] = 3800
 save_webp(os.path.join(OUT, "lily.webp"), frames, durs, quality=60)
 frames[-1].save(os.path.join(OUT, "lily_final.png")); frames[22].save(os.path.join(OUT, "lily_mid.png")); frames[40].save(os.path.join(OUT, "lily_mid2.png"))
